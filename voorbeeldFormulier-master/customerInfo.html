@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html  lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>customer info</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Waine">
+  <meta name="PRO1" content="Opdracht Forms">
+  </head>
+
+  <body>
+    <h1> Een plan voor jou ontwikkeling </h1>
+    <p> om een eerste stap te zetten naar een persoonlijk opleidingsplan zul je eerst een paar vragen voor jezelf moeten beantwoorden. Dit formulier helpt jou daarbij.
+      <br /> Alles met een sterretje is verplicht.</p>
+    <br />
+    <form action="http://bla.hosts.ma-cloud.nl/pop.php" method="get">
+      <label>Name<input type="text" name="Name" placeholder="Voor- en achternaam" required autofocus /></label>
+      <label>
+        <select name="klas" required>
+          <option value="">Selecteer jou klas</option>
+          <option value="MG1A">MG1A</option>
+          <option value="MG1B">MG1B</option>
+          <option value="MG1C">MG1C</option>
+          <option value="MG1D">MG1D</option>
+        </select></label>
+      <fieldset class="welbevinden">
+        <legend>Welbevinden</legend>
+        <p> Hoe positief ben je op dit moment over je opleiding? *</p>
+
+        <label><input type="radio" name="positief" value="0"> 0</label>
+        <label><input type="radio" name="positief" value="1"> 1</label>
+        <label><input type="radio" name="positief" value="2"> 2</label>
+        <label><input type="radio" name="positief" value="3"> 3</label>
+        <label><input type="radio" name="positief" value="4"> 4</label>
+        <label><input type="radio" name="positief" value="5"> 5</label>
+        <label><input type="radio" name="positief" value="6"> 6</label>
+        <label><input type="radio" name="positief" value="7"> 7</label>
+        <label><input type="radio" name="positief" value="8"> 8</label>
+        <label><input type="radio" name="positief" value="9"> 9</label>
+        <label><input type="radio" name="positief" value="10"> 10</label>
+
+        <p> Hoe gemotiveerd ben je momenteel om de opleiding af te maken? * </p>
+
+        <label><input type="radio" name="motivatie" value="0"> 0</label>
+        <label><input type="radio" name="motivatie" value="1"> 1</label>
+        <label><input type="radio" name="motivatie" value="2"> 2</label>
+        <label><input type="radio" name="motivatie" value="3"> 3</label>
+        <label><input type="radio" name="motivatie" value="4"> 4</label>
+        <label><input type="radio" name="motivatie" value="5"> 5</label>
+        <label><input type="radio" name="motivatie" value="6"> 6</label>
+        <label><input type="radio" name="motivatie" value="7"> 7</label>
+        <label><input type="radio" name="motivatie" value="8"> 8</label>
+        <label><input type="radio" name="motivatie" value="9"> 9</label>
+        <label><input type="radio" name="motivatie" value="10"> 10</label>
+
+        <p> Hoeveel vertrouwen heb je momenteel in je eigen kunnen? * </p>
+
+        <label><input type="radio" name="vertrouwen" value="0"> 0</label>
+        <label><input type="radio" name="vertrouwen" value="1"> 1</label>
+        <label><input type="radio" name="vertrouwen" value="2"> 2</label>
+        <label><input type="radio" name="vertrouwen" value="3"> 3</label>
+        <label><input type="radio" name="vertrouwen" value="4"> 4</label>
+        <label><input type="radio" name="vertrouwen" value="5"> 5</label>
+        <label><input type="radio" name="vertrouwen" value="6"> 6</label>
+        <label><input type="radio" name="vertrouwen" value="7"> 7</label>
+        <label><input type="radio" name="vertrouwen" value="8"> 8</label>
+        <label><input type="radio" name="vertrouwen" value="9"> 9</label>
+        <label><input type="radio" name="vertrouwen" value="10"> 10</label>
+
+      </fieldset>
+      <fieldset class="sterkte">
+        <legend> Sterke kanten </legend>
+
+        <p> Wat zijn jou sterke kanten?</p>
+
+          <label><input type="checkbox" name="Code-HTML/CSS" value="html">Coderen in HTML/CSS </label>
+          <label><input type="checkbox" name="Java" value="java"> Programmeren in Java </label>
+          <label><input type="checkbox" name="Javascript" value="script"> Scripting: programmeren in JavaScript </label>
+          <label><input type="checkbox" name="Planning" value="planning"> Planning </label>
+          <label><input type="checkbox" name="Samenwerken" value="samenwerken"> Samenwerken </label>
+
+      </fieldset>
+      <fieldset class="ontwikkeling">
+        <legend> Not te ontwikkelen </legend>
+
+        <p> Aan welke skills moet je nog extra aandacht besteden?</p>
+          <label><input type="checkbox" name="Code-HTML/CSS" value="html">Coderen in HTML/CSS </label>
+          <label><input type="checkbox" name="Java" value="java"> Programmeren in Java </label>
+          <label><input type="checkbox" name="Javascript" value="script"> Scripting: programmeren in JavaScript </label>
+          <label><input type="checkbox" name="Planning" value="planning"> Planning </label>
+          <label><input type="checkbox" name="Samenwerken" value="samenwerken"> Samenwerken </label>
+      </fieldset>
+      <p> Wat zijn jouw plannen voor de toekomst? </p>
+      <label><textarea name="plannen" rows="10" cols="80"> </textarea></label>
+      <input type="submit" name="send" value="Verstuur">
+        <div id="validatie">
+    <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+        <img src="https://blanken5.home.xs4all.nl/afb/valid-html5-blue.png" alt="Valide HTML5"></a>
+</div>
+    </form>
+
+  </body>
+
+</html>
